@@ -1,0 +1,7 @@
+pandas
+numpy
+pymongo==3.3.0
+PyMySQL==0.6.7
+tushare==0.5.0
+typing
+lxml

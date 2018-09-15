@@ -1,0 +1,59 @@
+{
+  "calendar": {
+    "source": "mysql://rice:rice@192.168.10.131:3306/pgenius",
+    "destination": "mongodb://localhost:27017/"
+  },
+  "fenji": {
+    "inst_path": "/etc/rq/hd/Instruments/latest/china",
+    "inst_file": ["FND_Instruments.csv"],
+    "source": "mysql://rice:rice@192.168.10.131:3306/pgenius",
+    "destination": "mongodb://localhost:27017/"
+  },
+  "st_stock": {
+    "inst_path": "/etc/rq/hd/Instruments/latest/china",
+    "inst_file": ["XSHE_Instruments.csv", "XSHG_Instruments.csv"],
+    "destination": "mongodb://localhost:27017/"
+  },
+  "index_comp": {
+    "path": "/etc/rq/hd/Instruments/latest/china",
+    "file": "INDX_Instruments.csv",
+    "destination": "mongodb://localhost:27017"
+  },
+  "ex_factor": {
+    "source": "mysql://rice:rice@192.168.10.131:3306/pgenius",
+    "inst_path": "/etc/rq/hd/Instruments/latest/china",
+    "inst_file": ["XSHE_Instruments.csv", "XSHG_Instruments.csv"],
+    "destination": "mongodb://localhost:27017/"
+  },
+  "xueqiu": {
+    "source_path": "/stock_data/rqdata/xueqiu/sum/china",
+    "destination": "mongodb://localhost:27017/"
+  },
+  "shenwan": {
+    "source": "mysql://jydb:jydb@192.168.10.168:3306/jydb",
+    "path": "/etc/rq/datahub",
+    "file": "shenwan.json",
+    "destination": "mongodb://localhost:27017/"
+  },
+  "share": {
+    "source": "mysql://rice:rice@192.168.10.131:3306/pgenius",
+    "inst_path": "/etc/rq/hd/Instruments/latest/china",
+    "inst_file": ["XSHE_Instruments.csv", "XSHG_Instruments.csv"],
+    "destination": "mongodb://localhost:27017/"
+  },
+  "stk_stop": {
+    "source": "mysql://rice:rice@192.168.10.131:3306/pgenius",
+    "destination": "mongodb://localhost:27017/",
+    "inst_path": "/etc/rq/hd/Instruments/latest/china",
+    "inst_file": ["XSHE_Instruments.csv", "XSHG_Instruments.csv"]
+  },
+  "update": {
+    "destination": "mongodb://localhost:27017/"
+  },
+  "tmall": {
+    "source": "mongodb://ricequant:ricequant@192.168.10.50:27017/tmall",
+    "destination": "mongodb://localhost:27017/",
+    "inst_path": "/etc/rq/hd/Instruments/latest/china",
+    "inst_file": ["XSHE_Instruments.csv", "XSHG_Instruments.csv"]
+  }
+}
